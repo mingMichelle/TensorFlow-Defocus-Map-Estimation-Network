@@ -1,8 +1,12 @@
 ## DMENet &mdash; Official TensorFlow Implementation
-![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
-![TensorFlow 1.13](https://img.shields.io/badge/tensorflow-1.13-green.svg?style=plastic)
-![TensorLayer 1.2.1](https://img.shields.io/badge/tensorlayer-1.2.1-green.svg?style=plastic)
-![CUDA 10.0.130](https://img.shields.io/badge/CUDA-10.0.130-green.svg?style=plastic)
+
+If you want to get the original code, please refer to  https://github.com/codeslake/DMENet
+
++ Python 3.6
++ TensorFlow 1.13
++ TensorLayer 1.2.1
+
+
 ![License CC BY-NC](https://img.shields.io/badge/license-GNU_AGPv3-green.svg?style=plastic)
 
 ![Teaser image](./assets/figure.png)
@@ -61,6 +65,16 @@ python main.py --is_train False --mode DMENet_BDCS
 ```
 *Please note that due to server issue, checkpoint file used for the paper is lost.
 The provided checkpoint file is the new checkpoint that shows the closest evaluation results as the checkpoint used in the paper.*
+
+### Additional approach
+To test custom images by using the pretrained model, download the model first and put it in the directory described in  Using pre-trained networks  section, and then run
+```bash
+python test.py
+```
+To use defocus map to extract the focus image
+```bash
+python extract_focus_image
+```
 
 ## BIBTEX
 If you find this code useful, please consider citing:
