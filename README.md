@@ -73,7 +73,7 @@ python test.py
 ```
 To use defocus map to extract the focus image
 ```bash
-python extract_focus_image
+python extract_focus_image.py
 ```
 
 ## BIBTEX
